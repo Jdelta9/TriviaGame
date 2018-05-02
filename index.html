@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taylor's Trivia</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <div class="jumbotron">
+                <h1>Taylor's Trivia!</h1>
+            </div>
+            <div Class="timeText" id="timeRemaining">Time Remaining: </div>
+            <div class="display">00:15</div>
+        </div>
+    </div>
+   
+    <div class="row">
+        <div class="container">
+            <div class="main text-center">
+                <p>
+                    <a class="btn btn-primary btn-xlarge start" role="button">Start</a>
+                </p>
+            </div>
+        </div>
+    </div>
+  
+    <div class="row text-center">
+        <div class=col-md-6 ">
+                <div class="question "></div>
+                <div class="response ">
+                    <a class="btn btn-primary btn-xlarge hide " role="button " id="0 ">response A</a><br>
+                    <a class="btn btn-primary btn-xlarge hide " role="button " id="1 ">response B</a><br>
+                    <a class="btn btn-primary btn-xlarge hide " role="button " id="2 ">response C</a><br>
+                    <a class="btn btn-primary btn-xlarge hide " role="button " id="3 ">response D</a>
+                </div>
+            </div>
+    </div><!--- End of row --->
+    <div class="row ">
+        <div class="col-md-6 ">
+            <div class="myTable hide ">
+                <table class="table table-striped ">
+                <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Your Response</th>
+                    <th>Correct Response</th>
+                    <th>Point</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td id="userAns1 ">Time Ran Out!</td>
+                <td id="answer1 ">john@example.com</td>
+                <td id="point1 ">0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="userAns2 ">Time Ran Out!</td>
+                <td id="answer2 ">mary@example.com</td>
+                <td id="point2 ">0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="userAns3 ">Time Ran Out!</td>
+                <td id="answer3 ">july@example.com</td>
+                <td id="point3 ">0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td id="userAns4 ">Time Ran Out!</td>
+                <td id="answer4 ">mary@example.com</td>
+                <td id="point4 ">0</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td id="userAns5 ">Time Ran Out!</td>
+                <td id="answer5 ">july@example.com</td>
+                <td id="point5 ">0</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td>--</td>
+                <td>--</td>
+                <td id="score ">0</td>
+            </tr>
+            </tbody>
+            </table>
+            </div><!--- End of Table --->
+        </div>
+        <div class="col-md-6 ">
+            <canvas class="pie hide " id="myChart "></canvas>
+        </div>
+    </div><!--- End of row --->
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js "></script>
+<script src="assets/javascript/app.js "></script>
+</html>

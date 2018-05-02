@@ -1,0 +1,45 @@
+.body {
+	background-image: url("..goldGlitter.jpg");
+}
+.btn-xlarge {
+    min-width: 300px;
+    padding: 18px 28px;
+    font-size: 22px; 
+   line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.start{
+    align-content: center;
+}
+
+.table{
+    max-width: 100%;
+
+}
+
+.display{
+    color: pink;
+}
+
+.pie{
+    max-width: 600px;
+    max-height: 600px;
+    margin: auto;
+
+}
+
+.question{
+    margin: 10px;
+}
+
+.timeText, .display, .question{
+    font-size: x-large;
+}
+
+#score{
+    font-weight: bold;
+}
