@@ -1,4 +1,4 @@
-var DEBUG = true;
+var DEBUG = false;
 var questionNumber = 1;
 var answerSheet = ['Mac & Cheese', 'Pensacola', '7', 'All the above', 'Frozen'];
 var count = 0;
