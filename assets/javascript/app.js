@@ -30,12 +30,12 @@ var questions = {
 
 var stopwatch = {
 
-    time: 15,
+    time: 10,
     isValid: true,
 
     reset: function () {
         stopwatch.stop();
-        stopwatch.time = 15;
+        stopwatch.time = 10;
         stopwatch.isValid = true;
         var converted = stopwatch.timeConverter(stopwatch.time);
         $(".display").html(converted);
